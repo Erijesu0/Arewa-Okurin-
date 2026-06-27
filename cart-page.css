@@ -1,0 +1,32 @@
+.cart-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 8rem 2rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 2rem 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.cart-item button {
+  margin-left: auto;
+
+  padding: 0.8rem 1.5rem;
+
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
