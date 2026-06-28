@@ -28,3 +28,35 @@ cartButtons.forEach((button) => {
 });
 
 updateCartCount();
+
+const dropdownBtn = document.getElementById("dropdownBtn");
+const dropdownMenu = document.getElementById("dropdownMenu");
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+dropdownBtn.addEventListener("click", function () {
+  dropdownMenu.classList.toggle("show");
+});
+
+menuToggle.addEventListener("click", function () {
+  navLinks.classList.toggle("active");
+
+  if (navLinks.classList.contains("active")) {
+    menuToggle.innerHTML = "✕";
+  } else {
+    menuToggle.innerHTML = "☰";
+  }
+});
+
+window.addEventListener("click", function (e) {
+  if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+    dropdownMenu.classList.remove("show");
+  }
+});
+
+function updateCartCount() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  document.getElementById("cart-count").textContent = cart.length;
+}
+
+updateCartCount();

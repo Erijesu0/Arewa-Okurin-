@@ -10,10 +10,6 @@ body {
   scroll-behavior: smooth;
 }
 
-header,
-.hero {
-}
-
 .site-header {
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
@@ -423,7 +419,7 @@ header,
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/hitomi-bremmer-Y4vI-JSvWqw-unsplash (1).jpg");
+    url("Images/Fila\ 5.jpg");
 
   background-size: cover;
   background-position: center;
